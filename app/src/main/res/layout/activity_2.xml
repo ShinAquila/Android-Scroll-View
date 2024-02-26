@@ -13,7 +13,12 @@
         android:layout_gravity="center_horizontal"
         android:textSize="40sp"
         android:text="Second Page">
-
     </TextView>
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Back">
+    </Button>
 
 </LinearLayout>
