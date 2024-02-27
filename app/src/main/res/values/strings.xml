@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Le App</string>
-    <string name="x_link">x.com"</string>
+    <string name="x_link">X\n<a href="x.com">X</a></string>
 </resources>

@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".games">
+    tools:context=".maps">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Games"
-        android:textSize="50sp">
+        android:text="Maps"
+        android:textSize="50sp"
+        android:gravity="center">
 
     </TextView>
 

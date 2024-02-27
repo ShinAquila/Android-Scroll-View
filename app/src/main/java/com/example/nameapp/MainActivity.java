@@ -5,9 +5,11 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     public CardView maps,games;
@@ -30,7 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
         games = (CardView) findViewById(R.id.gamesCard);
         games.setOnClickListener(this::onClick);
+
+        maps = (CardView) findViewById(R.id.mapsCard);
+        maps.setOnClickListener(this::onClick);
+
+
     }
+
 
     public void openActivity2(){
         Intent intent = new Intent(this, Activity2.class);
@@ -42,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
         if (view.getId() == R.id.gamesCard){
             i = new Intent(this,games.class);
+            startActivity(i);
+        } else if (view.getId() == R.id.mapsCard) {
+            i = new Intent(this,maps.class);
             startActivity(i);
         }
 
