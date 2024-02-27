@@ -197,6 +197,7 @@
                 android:columnCount="2">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/mapsCard"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_rowWeight="1"
@@ -214,13 +215,13 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/fb_icon" />
+                            android:src="@drawable/map" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Facebook"
+                            android:text="Maps"
                             android:textColor="@color/black"
                             android:textSize="18sp"
                             android:textStyle="bold" />
@@ -231,6 +232,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/gamesCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
@@ -249,13 +251,13 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/x_icon" />
+                            android:src="@drawable/game" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="X"
+                            android:text="Games"
                             android:textColor="@color/black"
                             android:textSize="18sp"
                             android:textStyle="bold" />

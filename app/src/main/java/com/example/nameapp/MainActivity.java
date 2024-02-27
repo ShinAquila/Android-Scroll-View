@@ -1,6 +1,7 @@
 package com.example.nameapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    public CardView maps,games;
     private Button button;
 
     @Override
@@ -25,10 +27,23 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
+
+        games = (CardView) findViewById(R.id.gamesCard);
+        games.setOnClickListener(this::onClick);
     }
 
     public void openActivity2(){
         Intent intent = new Intent(this, Activity2.class);
         startActivity(intent);
+    }
+
+    public void onClick(View view){
+        Intent i;
+
+        if (view.getId() == R.id.gamesCard){
+            i = new Intent(this,games.class);
+            startActivity(i);
+        }
+
     }
 }
